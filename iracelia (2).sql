@@ -1,4 +1,3 @@
-show databases;
 create database clinica;
 
 use clinica;
@@ -6,7 +5,7 @@ use clinica;
 show tables;
 
 create table especialidades(
-	id int primary key auto_increment,
+id int primary key auto_increment,
     nome varchar (45)
 );
 
@@ -19,9 +18,7 @@ create table medicos(
 );
 
 insert into medicos(nome, crm, especialidades) values ("iracelia", "98765", "psicologa");
-
-select * from medicos;
-
 insert into especialidas(nome) values ("psicologia");
 
-select * from especialidas;
+select * from medicos;
+select * from especialidades;
